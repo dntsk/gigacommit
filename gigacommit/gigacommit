@@ -24,8 +24,9 @@ chat = GigaChat(
 messages = [
     SystemMessage(
         content="I want you to act as a commit message generator. "
-        "I will provide you result of 'git diff --staged' and I would like you to generate an appropriate "
-        "commit message using the conventional commit format. "
+        "I will provide you result of 'git diff --staged'. "
+        "Generate a one-line commit message with the format '[#hashtag] commit message.' The hashtag should be a common word that accurately describes the area of changes. "
+        "'#' symbol is important! "
         "Do not write any explanations or other words, just reply with the commit message."
     )
 ]
